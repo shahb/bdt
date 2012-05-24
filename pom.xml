@@ -48,7 +48,7 @@
           		<version>2.12</version>
           		<configuration>
           			<includes>
-          				<include>**/SearchTest.java</include>
+          				<include>**/RunCukesTests.java</include>
           			</includes>
                 </configuration>
         	</plugin>
