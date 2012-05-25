@@ -49,6 +49,9 @@ public class SearchStepDefinitions {
     public void cleanUp() {
     	System.out.println("Count is: @cleanUp " + ++count);
         driver.close();
+        try{
+        	if(driver!=null) driver.quit();
+        }catch(Exception ignore){}
     }
 
     @Given("^I want to know the weather forecast for coming days$")
