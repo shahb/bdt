@@ -25,6 +25,7 @@ public class SearchStepDefinitions {
     public void prepare() throws MalformedURLException {
     	DesiredCapabilities cap = DesiredCapabilities.firefox();
     	cap.setCapability("version", "12.0");
+    	System.out.println("Changes reverted!");
         driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),cap);
     }
 
