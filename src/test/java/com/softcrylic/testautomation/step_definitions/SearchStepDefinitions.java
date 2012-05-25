@@ -64,8 +64,8 @@ public class SearchStepDefinitions {
         home = new HomePage(driver);
     }
 
-    //@When("^I search for (.*)$")
-    @When("^I search for nothing$")
+    @When("^I search for (.*)$")
+    //@When("^I search for nothing$")
     public void search(String location) {
     	System.out.println("Count is: @search " + ++count);
         searchResult = home.searchFor(location);
