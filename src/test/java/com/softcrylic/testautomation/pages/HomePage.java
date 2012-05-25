@@ -17,7 +17,7 @@ public class HomePage {
 
     public SearchResultPage searchFor(String location) {
         try {
-            WebElement searchField = driver.findElement(By.id("sed"));
+            WebElement searchField = driver.findElement(By.id("sted"));
             searchField.clear();
             searchField.sendKeys(location);
             searchField.submit();
