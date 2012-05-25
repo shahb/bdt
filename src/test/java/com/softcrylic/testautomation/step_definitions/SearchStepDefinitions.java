@@ -37,6 +37,7 @@ public class SearchStepDefinitions {
     		 capabillities.setCapability("version", "12.0");
          capabillities.setCapability("platform", Platform.XP);
          capabillities.setCapability("name", "Running via Jenkins. Testing on Sauce");
+         capabillities.setCapability("record-video", false);
 
          this.driver = new RemoteWebDriver(
         		 new URL(url),
