@@ -21,7 +21,7 @@ public class SearchStepDefinitions {
     private HomePage home;
     private SearchResultPage searchResult;
 
-    @Before
+    @Before 
     public void prepare() throws MalformedURLException {
     	DesiredCapabilities cap = DesiredCapabilities.firefox();
     	cap.setCapability("version", "12.0");
