@@ -31,7 +31,10 @@ public class SearchStepDefinitions {
     	//url = "http://localhost:4444/wd/hub";
     	System.out.println("Running at: "+url);
     	 DesiredCapabilities capabillities = DesiredCapabilities.firefox();
-         capabillities.setCapability("version", "12.0");
+    	 if(url.contains("saucelabs"))
+         capabillities.setCapability("version", "11");
+    	 else
+    		 capabillities.setCapability("version", "12.0");
          capabillities.setCapability("platform", Platform.XP);
          capabillities.setCapability("name", "Running via Jenkins. Testing on Sauce");
 
