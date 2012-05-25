@@ -26,8 +26,9 @@ public class SearchStepDefinitions {
 
     @Before 
     public void prepare() throws MalformedURLException {
+    	System.out.println("Count is:  @prepare" + ++count);
     	String url = "http://mayur_softcrylic:1034911c-db71-4c8e-8e12-7831abf6adf7@ondemand.saucelabs.com:80/wd/hub";
-    	url = "http://localhost:4444/wd/hub";
+    	//url = "http://localhost:4444/wd/hub";
     	System.out.println("Running at: "+url);
     	 DesiredCapabilities capabillities = DesiredCapabilities.firefox();
          capabillities.setCapability("version", "12.0");
@@ -46,24 +47,29 @@ public class SearchStepDefinitions {
 
     @After
     public void cleanUp() {
+    	System.out.println("Count is: @cleanUp " + ++count);
         driver.close();
     }
 
     @Given("^I want to know the weather forecast for coming days$")
     public void prepareHomePage() {
+    	System.out.println("Count is: @prepareHomePage " + ++count);
         home = new HomePage(driver);
     }
 
     @When("^I search for (.*)$")
     public void search(String location) {
+    	System.out.println("Count is: @search " + ++count);
         searchResult = home.searchFor(location);
     }
 
     @Then("^I should be able to get a weather forecast for (.*)$")
     public void assertTheSearchResult(String locationName) {
+    	System.out.println("Count is: @assertTheSearchResult " + ++count);
         LocationPage location = searchResult.clickOnTopSearchResultLink();
         String actualHeadLine = location.getHeadLine();
 
         assertTrue(actualHeadLine.contains(locationName));
     }
+    private static int count =0;
 }
