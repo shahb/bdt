@@ -27,9 +27,10 @@ public class SearchStepDefinitions {
     @Before 
     public void prepare() throws MalformedURLException {
     	String url = "http://mayur_softcrylic:1034911c-db71-4c8e-8e12-7831abf6adf7@ondemand.saucelabs.com:80/wd/hub";
+    	url = "http://localhost:4444/wd/hub";
     	System.out.println("Running at: "+url);
     	 DesiredCapabilities capabillities = DesiredCapabilities.firefox();
-         capabillities.setCapability("version", "5");
+         capabillities.setCapability("version", "12.0");
          capabillities.setCapability("platform", Platform.XP);
          capabillities.setCapability("name", "Running via Jenkins. Testing on Sauce");
 
