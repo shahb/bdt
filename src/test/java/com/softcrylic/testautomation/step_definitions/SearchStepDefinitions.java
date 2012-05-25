@@ -26,13 +26,15 @@ public class SearchStepDefinitions {
 
     @Before 
     public void prepare() throws MalformedURLException {
+    	String url = "http://mayur_softcrylic:1034911c-db71-4c8e-8e12-7831abf6adf7@ondemand.saucelabs.com:80/wd/hub";
+    	System.out.println("Running at: "+url);
     	 DesiredCapabilities capabillities = DesiredCapabilities.firefox();
          capabillities.setCapability("version", "5");
          capabillities.setCapability("platform", Platform.XP);
          capabillities.setCapability("name", "Testing Selenium 2 with Java on Sauce");
 
          this.driver = new RemoteWebDriver(
-        		 new URL("http://mayur_softcrylic:1034911c-db71-4c8e-8e12-7831abf6adf7@ondemand.saucelabs.com:80/wd/hub"),
+        		 new URL(url),
             capabillities);
          driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     	//DesiredCapabilities cap = DesiredCapabilities.firefox();
