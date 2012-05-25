@@ -31,7 +31,7 @@ public class SearchStepDefinitions {
     	 DesiredCapabilities capabillities = DesiredCapabilities.firefox();
          capabillities.setCapability("version", "5");
          capabillities.setCapability("platform", Platform.XP);
-         capabillities.setCapability("name", "Testing Selenium 2 with Java on Sauce");
+         capabillities.setCapability("name", "Running via Jenkins. Testing on Sauce");
 
          this.driver = new RemoteWebDriver(
         		 new URL(url),
