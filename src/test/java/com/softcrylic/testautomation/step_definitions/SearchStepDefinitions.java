@@ -28,7 +28,7 @@ public class SearchStepDefinitions {
     public void prepare() throws MalformedURLException {
     	System.out.println("Count is:  @prepare" + ++count);
     	String url = "http://mayur_softcrylic:1034911c-db71-4c8e-8e12-7831abf6adf7@ondemand.saucelabs.com:80/wd/hub";
-    	//url = "http://localhost:4444/wd/hub";
+    	url = "http://localhost:4444/wd/hub";
     	System.out.println("Running at: "+url);
     	 DesiredCapabilities capabillities = DesiredCapabilities.firefox();
     	 if(url.contains("saucelabs"))
