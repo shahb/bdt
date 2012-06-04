@@ -12,6 +12,6 @@ package com.softcrylic.testautomation;
 
 //@RunWith(Parallelized.class)
 //@Parallelized.MyClasses({AllTests.class,JunitClassTest.class})
-public class JUnitParallel{
+public class JUnitParallel{ 
 	
 }

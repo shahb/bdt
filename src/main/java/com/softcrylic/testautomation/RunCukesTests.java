@@ -14,6 +14,6 @@ import org.junit.runner.RunWith;
 // @Cucumber.Options(format = "html:target/cukes")
 @Cucumber.Options(format = {"pretty", "html:target/cucumber","json:target/cucumber.json" })
 public class RunCukesTests  {
-	/*@Test
+	/*@Test 
 	public void testDummy(){}*/
 }

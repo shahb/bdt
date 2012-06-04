@@ -29,7 +29,7 @@ public class SearchStepDefinitions {
     	String url = "http://mayur_softcrylic:1034911c-db71-4c8e-8e12-7831abf6adf7@ondemand.saucelabs.com:80/wd/hub";
     	url = "http://localhost:4444/wd/hub";
     	System.out.println("Running at: "+url);
-    	 DesiredCapabilities capabillities = DesiredCapabilities.firefox(); 
+    	 DesiredCapabilities capabillities = DesiredCapabilities.chrome(); 
     	 //if(url.contains("saucelabs"))
         // capabillities.setCapability("version", "11");
     	// else
@@ -64,7 +64,7 @@ public class SearchStepDefinitions {
     }
 
     @When("^I search for (.*)$")
-    //@When("^I search for nothing$")
+    //@When("^I search for nothing$") 
     public void search(String location) {
     	System.out.println("Count is: @search " + ++count);
         searchResult = home.searchFor(location);
