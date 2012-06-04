@@ -12,7 +12,7 @@ import org.junit.runners.Suite;
 public class JunitClassTest extends TestCase{
 	
 	public JunitClassTest(){
-		super();
+		super(); 
 	}
 	public JunitClassTest(String TestName){
 		super(TestName);
