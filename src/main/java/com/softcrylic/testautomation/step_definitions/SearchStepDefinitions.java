@@ -30,7 +30,7 @@ public class SearchStepDefinitions {
     	url = "http://localhost:4444/wd/hub";
     	System.out.println("Running at: "+url);
     	 DesiredCapabilities capabillities = DesiredCapabilities.chrome(); 
-    	 //if(url.contains("saucelabs"))
+    	 //if(url.contains("saucelabs")) 
         // capabillities.setCapability("version", "11");
     	// else
     		// capabillities.setCapability("version", "12.0");
