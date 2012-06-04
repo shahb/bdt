@@ -3,14 +3,13 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.softcrylic.testautomation</groupId>
-  <artifactId>bdd</artifactId>
+  <artifactId>bdt</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>demo</name>
-  <description>behaviour driven development with selenium test automation</description>
-  
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
+  <packaging>jar</packaging>
+
+  <name>MyNewProj</name>
+  <url>http://maven.apache.org</url>
+
 
   <dependencies>
 	 	<dependency>
