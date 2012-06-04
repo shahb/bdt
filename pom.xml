@@ -51,7 +51,6 @@
 		           <include>**/RunCukesTests.java</include>
 		           <include>**/RunCukesTests2.java</include>
 		           </includes>
-		           <parallel>classes</parallel>
             </configuration>
          </plugin>
       </plugins>
