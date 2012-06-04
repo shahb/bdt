@@ -56,7 +56,6 @@
            <configuration>
 		           <includes>
 		           <include>**/RunCukesTests.java</include>
-		           <include>**/RunCukesTests2.java</include>
 		           </includes>
             </configuration>
          </plugin>
