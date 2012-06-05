@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri('com\softcrylic\test\automation\stockholm.feature');
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri('C:\Documents and Settings\mayurshahb\My Documents\GitHub\bdt\src\test\resources\com\softcrylic\test\automation\stock.feature');
 formatter.feature({
   "id": "it-should-be-possible-to-search-for-places-at-the-norwegian-meteorological-institute,-http://www.yr.no",
   "description": "",
@@ -33,7 +33,7 @@ formatter.match({
   "location": "SearchStepDefinitions.prepareHomePage()"
 });
 formatter.result({
-  "duration": 12165232540,
+  "duration": 10335976130,
   "status": "passed"
 });
 formatter.match({
@@ -46,7 +46,7 @@ formatter.match({
   "location": "SearchStepDefinitions.search(String)"
 });
 formatter.result({
-  "duration": 7821745463,
+  "duration": 7714471742,
   "status": "passed"
 });
 formatter.match({
@@ -59,7 +59,7 @@ formatter.match({
   "location": "SearchStepDefinitions.assertTheSearchResult(String)"
 });
 formatter.result({
-  "duration": 5132996781,
+  "duration": 9080088866,
   "status": "passed"
 });
 });

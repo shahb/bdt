@@ -49,8 +49,7 @@
            <version>2.11</version>
            <configuration>
 	           <includes>
-		           	<include>**/RunCukesTests.java</include>
-		           	<include>**/RunCukesTests2.java</include>
+		           	<include>**/Run*.java</include>
 		       </includes>
 		       <parallel>classes</parallel>
 		   </configuration>
