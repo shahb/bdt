@@ -33,7 +33,7 @@ formatter.match({
   "location": "SearchStepDefinitions.prepareHomePage()"
 });
 formatter.result({
-  "duration": 10097564434,
+  "duration": 12837066864,
   "status": "passed"
 });
 formatter.match({
@@ -46,7 +46,7 @@ formatter.match({
   "location": "SearchStepDefinitions.search(String)"
 });
 formatter.result({
-  "duration": 2985680279,
+  "duration": 7021039632,
   "status": "passed"
 });
 formatter.match({
@@ -59,7 +59,7 @@ formatter.match({
   "location": "SearchStepDefinitions.assertTheSearchResult(String)"
 });
 formatter.result({
-  "duration": 2660459149,
+  "duration": 7299526268,
   "status": "passed"
 });
 formatter.uri('com\softcrylic\testautomation\feature\test2.feature');
@@ -97,7 +97,7 @@ formatter.match({
   "location": "SearchStepDefinitions.prepareHomePage()"
 });
 formatter.result({
-  "duration": 11737811398,
+  "duration": 14102609894,
   "status": "passed"
 });
 formatter.match({
@@ -110,7 +110,7 @@ formatter.match({
   "location": "SearchStepDefinitions.search(String)"
 });
 formatter.result({
-  "duration": 5132200212,
+  "duration": 4900002785,
   "status": "passed"
 });
 formatter.match({
@@ -123,7 +123,7 @@ formatter.match({
   "location": "SearchStepDefinitions.assertTheSearchResult(String)"
 });
 formatter.result({
-  "duration": 2436799218,
+  "duration": 3927011996,
   "status": "passed"
 });
 formatter.uri('com\softcrylic\testautomation\test.feature');
@@ -161,7 +161,7 @@ formatter.match({
   "location": "SearchStepDefinitions.prepareHomePage()"
 });
 formatter.result({
-  "duration": 9735674615,
+  "duration": 16125378305,
   "status": "passed"
 });
 formatter.match({
@@ -174,7 +174,7 @@ formatter.match({
   "location": "SearchStepDefinitions.search(String)"
 });
 formatter.result({
-  "duration": 3820962100,
+  "duration": 8690665453,
   "status": "passed"
 });
 formatter.match({
@@ -187,7 +187,7 @@ formatter.match({
   "location": "SearchStepDefinitions.assertTheSearchResult(String)"
 });
 formatter.result({
-  "duration": 2583068962,
+  "duration": 3609642993,
   "status": "passed"
 });
 formatter.uri('com\softcrylic\testautomation\test.feature');
@@ -225,7 +225,7 @@ formatter.match({
   "location": "SearchStepDefinitions.prepareHomePage()"
 });
 formatter.result({
-  "duration": 15076973619,
+  "duration": 14213375655,
   "status": "passed"
 });
 formatter.match({
@@ -238,7 +238,7 @@ formatter.match({
   "location": "SearchStepDefinitions.search(String)"
 });
 formatter.result({
-  "duration": 3416930134,
+  "duration": 6352663467,
   "status": "passed"
 });
 formatter.match({
@@ -251,7 +251,7 @@ formatter.match({
   "location": "SearchStepDefinitions.assertTheSearchResult(String)"
 });
 formatter.result({
-  "duration": 2831018723,
+  "duration": 5407616448,
   "status": "passed"
 });
 formatter.uri('com\softcrylic\testautomation\test2.feature');
@@ -289,7 +289,7 @@ formatter.match({
   "location": "SearchStepDefinitions.prepareHomePage()"
 });
 formatter.result({
-  "duration": 8881399402,
+  "duration": 8564367992,
   "status": "passed"
 });
 formatter.match({
@@ -302,7 +302,7 @@ formatter.match({
   "location": "SearchStepDefinitions.search(String)"
 });
 formatter.result({
-  "duration": 3600449569,
+  "duration": 6286115130,
   "status": "passed"
 });
 formatter.match({
@@ -315,7 +315,7 @@ formatter.match({
   "location": "SearchStepDefinitions.assertTheSearchResult(String)"
 });
 formatter.result({
-  "duration": 2360009791,
+  "duration": 4089552074,
   "status": "passed"
 });
-});
+}););

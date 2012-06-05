@@ -50,7 +50,6 @@
            <configuration>
 	           <includes>
 		           	<include>**/RunCukesTests.java</include>
-		           	<include>**/AllTests.java</include>
 		           	<include>**/RunCukesTests2.java</include>
 		       </includes>
 	           <parallel>classes</parallel>
