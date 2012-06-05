@@ -31,7 +31,7 @@
         </dependency>
     </dependencies>
     <build>
-    <testSourceDirectory>src/main/java</testSourceDirectory>
+    <testSourceDirectory>src/test/java</testSourceDirectory>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -46,14 +46,14 @@
          <plugin>
            <groupId>org.apache.maven.plugins</groupId>
            <artifactId>maven-surefire-plugin</artifactId>
-           <version>2.12</version>
+           <version>2.11</version>
            <configuration>
 	           <includes>
 		           	<include>**/RunCukesTests.java</include>
 		           	<include>**/RunCukesTests2.java</include>
 		       </includes>
-	           <parallel>classes</parallel>
-           </configuration>
+		       <parallel>classes</parallel>
+	       </configuration>
          </plugin>
       </plugins>
     </build>

@@ -1,0 +1,136 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building demo 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ bdt ---
+[INFO] Deleting C:\Documents and Settings\mayurshahb\My Documents\GitHub\bdt\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ bdt ---
+[debug] execute contextualize
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory C:\Documents and Settings\mayurshahb\My Documents\GitHub\bdt\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ bdt ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ bdt ---
+[debug] execute contextualize
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ bdt ---
+[INFO] Compiling 10 source files to C:\Documents and Settings\mayurshahb\My Documents\GitHub\bdt\target\test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12:test (default-test) @ bdt ---
+[INFO] Surefire report directory: C:\Documents and Settings\mayurshahb\My Documents\GitHub\bdt\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Concurrency config is parallel='classes', perCoreThreadCount=true, threadCount=2, useUnlimitedThreads=false
+Feature: It should be possible to search for places at the Norwegian Institute, http://www.yr.noFeature: It should be possible to search for places at the Norwegian Meteorological Institute, http://www.yr.no
+
+Count is:  @prepare1
+Running at: http://localhost:4444/wd/hub
+Count is:  @prepare1
+Running at: http://localhost:4444/wd/hub
+
+  Scenario: Find Stockholm                                      [90m# C:\Documents and Settings\mayurshahb\My Documents\GitHub\bdt\src\test\resources\com\softcrylic\testautomation2\test2.feature:3[0m
+    [90mGiven [0m[90mI wanna know the weather forecast for coming days[0m     [90m# SearchStepDefinitions2.prepareHomePage()[0m
+Count is: @prepareHomePage 2
+
+  Scenario: Locate Stockholm                                      [90m# C:\Documents and Settings\mayurshahb\My Documents\GitHub\bdt\src\test\resources\com\softcrylic\testautomation\test.feature:3[0m
+    [90mGiven [0m[90mI want to know the weather forecast for coming days[0m     [90m# SearchStepDefinitions.prepareHomePage()[0m
+Count is: @prepareHomePage 2
+[1A    [32mGiven [0m[32mI wanna know the weather forecast for coming days[0m     [90m# SearchStepDefinitions2.prepareHomePage()[0m
+    [90mWhen [0m[90mI look for [0m[90m[1mStockholm[0m                                   [90m# SearchStepDefinitions2.search(String)[0m
+Count is: @search 3
+[1A    [32mGiven [0m[32mI want to know the weather forecast for coming days[0m     [90m# SearchStepDefinitions.prepareHomePage()[0m
+    [90mWhen [0m[90mI search for [0m[90m[1mStockholm[0m                                   [90m# SearchStepDefinitions.search(String)[0m
+Count is: @search 3
+[1A    [32mWhen [0m[32mI search for [0m[32m[1mStockholm[0m                                   [90m# SearchStepDefinitions.search(String)[0m
+    [90mThen [0m[90mI should be able to get a weather forecast for [0m[90m[1mStockholm[0m [90m# SearchStepDefinitions.assertTheSearchResult(String)[0m
+Count is: @assertTheSearchResult 4
+[1A    [32mWhen [0m[32mI look for [0m[32m[1mStockholm[0m                                   [90m# SearchStepDefinitions2.search(String)[0m
+    [90mThen [0m[90mI must be able to get a weather forecast for [0m[90m[1mStockholm[0m [90m# SearchStepDefinitions2.assertTheSearchResult(String)[0m
+Count is: @assertTheSearchResult 4
+[1A    [32mThen [0m[32mI should be able to get a weather forecast for [0m[32m[1mStockholm[0m [90m# SearchStepDefinitions.assertTheSearchResult(String)[0m
+Count is: @cleanUp 5
+[1A    [32mThen [0m[32mI must be able to get a weather forecast for [0m[32m[1mStockholm[0m [90m# SearchStepDefinitions2.assertTheSearchResult(String)[0m
+Count is: @cleanUp 5
+
+
+org.apache.maven.surefire.util.SurefireReflectionException: java.lang.reflect.InvocationTargetException; nested exception is java.lang.reflect.InvocationTargetException: null
+java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:103)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:74)
+Caused by: org.apache.maven.surefire.testset.TestSetFailedException: java.lang.NullPointerException; nested exception is java.lang.NullPointerException: null
+	at org.apache.maven.surefire.common.junit4.JUnit4RunListener.rethrowAnyTestMechanismFailures(JUnit4RunListener.java:166)
+	at org.apache.maven.surefire.junitcore.JUnitCoreWrapper.execute(JUnitCoreWrapper.java:63)
+	at org.apache.maven.surefire.junitcore.JUnitCoreProvider.invoke(JUnitCoreProvider.java:139)
+	... 9 more
+Caused by: java.lang.NullPointerException
+	at org.apache.maven.surefire.junitcore.ConcurrentReporterManager.testStarting(ConcurrentReporterManager.java:106)
+	at org.apache.maven.surefire.common.junit4.JUnit4RunListener.testStarted(JUnit4RunListener.java:87)
+	at org.junit.runner.notification.RunNotifier$3.notifyListener(RunNotifier.java:87)
+	at org.junit.runner.notification.RunNotifier$SafeNotifier.run(RunNotifier.java:41)
+	at org.junit.runner.notification.RunNotifier.fireTestStarted(RunNotifier.java:84)
+	at org.junit.internal.runners.model.EachTestNotifier.fireTestStarted(EachTestNotifier.java:45)
+	at cucumber.junit.JUnitReporter.startExecutionUnit(JUnitReporter.java:47)
+	at cucumber.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:74)
+	at cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:65)
+	at cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:20)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at cucumber.junit.FeatureRunner.run(FeatureRunner.java:72)
+	at cucumber.junit.Cucumber.runChild(Cucumber.java:76)
+	at cucumber.junit.Cucumber.runChild(Cucumber.java:36)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at cucumber.junit.Cucumber.run(Cucumber.java:81)
+	at org.apache.maven.surefire.junitcore.ClassDemarcatingRunner.run(ClassDemarcatingRunner.java:58)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:24)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1110)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:603)
+	at java.lang.Thread.run(Thread.java:722)
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 37.371s
+[INFO] Finished at: Tue Jun 05 19:47:06 IST 2012
+[INFO] Final Memory: 11M/27M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12:test (default-test) on project bdt: Error occurred in starting fork, check output in log -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
