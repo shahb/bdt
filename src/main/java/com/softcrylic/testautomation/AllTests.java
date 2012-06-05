@@ -12,4 +12,8 @@ public class AllTests extends junit.framework.TestSuite {
 	public AllTests(){ 
 		super();
 	}
+	//@Test
+	//public void testTheJunit(){
+	//	System.out.println("AllTest is getting called!");
+	//}
 }
