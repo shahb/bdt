@@ -1,4 +1,4 @@
-package com.softcrylic.test.automation2.step_definations;
+package com.softcrylic.test.automation.step_definations;
 
 import java.net.MalformedURLException;
 import java.net.URL;

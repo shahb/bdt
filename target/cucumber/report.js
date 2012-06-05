@@ -1,65 +1,65 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri('C:\Documents and Settings\mayurshahb\My Documents\GitHub\bdt\src\test\resources\com\softcrylic\testautomation\test.feature');
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri('C:\Documents and Settings\mayurshahb\My Documents\GitHub\bdt\src\test\resources\com\softcrylic\testautomation\newYork.feature');
 formatter.feature({
-  "id": "it-should-be-possible-to-search-for-places-at-the-norwegian-meteorological-institute,-http://www.yr.no",
+  "id": "it-should-be-possible-to-search-for-places-at-the-norwegian-institute,-http://www.yr.no",
   "description": "",
-  "name": "It should be possible to search for places at the Norwegian Meteorological Institute, http://www.yr.no",
+  "name": "It should be possible to search for places at the Norwegian Institute, http://www.yr.no",
   "keyword": "Feature",
   "line": 1
 });
 formatter.scenario({
-  "id": "it-should-be-possible-to-search-for-places-at-the-norwegian-meteorological-institute,-http://www.yr.no;locate-stockholm",
+  "id": "it-should-be-possible-to-search-for-places-at-the-norwegian-institute,-http://www.yr.no;search-new-york",
   "description": "",
-  "name": "Locate Stockholm",
+  "name": "Search New York",
   "keyword": "Scenario",
   "line": 3,
   "type": "scenario"
 });
 formatter.step({
-  "name": "I want to know the weather forecast for coming days",
+  "name": "I wanna know the weather forecast for coming days",
   "keyword": "Given ",
   "line": 5
 });
 formatter.step({
-  "name": "I search for Stockholm",
+  "name": "I look for New York",
   "keyword": "When ",
   "line": 6
 });
 formatter.step({
-  "name": "I should be able to get a weather forecast for Stockholm",
+  "name": "I must be able to get a weather forecast for New York",
   "keyword": "Then ",
   "line": 7
 });
 formatter.match({
-  "location": "SearchStepDefinitions.prepareHomePage()"
+  "location": "SearchStepDefinitions2.prepareHomePage()"
 });
 formatter.result({
-  "duration": 9862811211,
+  "duration": 12901958830,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Stockholm",
-      "offset": 13
+      "val": "New York",
+      "offset": 11
     }
   ],
-  "location": "SearchStepDefinitions.search(String)"
+  "location": "SearchStepDefinitions2.search(String)"
 });
 formatter.result({
-  "duration": 6845951833,
+  "duration": 9176766872,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Stockholm",
-      "offset": 47
+      "val": "New York",
+      "offset": 45
     }
   ],
-  "location": "SearchStepDefinitions.assertTheSearchResult(String)"
+  "location": "SearchStepDefinitions2.assertTheSearchResult(String)"
 });
 formatter.result({
-  "duration": 3058410957,
+  "duration": 6006038090,
   "status": "passed"
 });
 });
